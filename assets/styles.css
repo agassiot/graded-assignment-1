@@ -24,8 +24,8 @@ p {
 
 a {color: var(--white);
     text-decoration: none;}
-h2 {font-size: 3em;}
-h3 {font-size: 3em;}
+
+h3 {font-size: 2em;}
 
 /*wrap all items in a new grid */
 .mastergrid {
@@ -101,10 +101,18 @@ div.boxitem {
     padding:1em;
 }
 
-.boxitem li:first-child{
+.boxitem li:first-child {
     color: var(--darkgreen);
+    column-span: 2;
     font-size: 2em;
-    align-self: flex-start;
+    text-align: center;
+}
+
+.boxitem li:last-child {
+    column-span: 1;
+    text-align: center;
+    margin-top: 2em;
+
 }
 
 [src="./assets/images/online-reputation-management.jpg"]{
@@ -127,9 +135,9 @@ div.benefits {
     text-align: center;
 }
 .benefits p{
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-bottom: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
 }
 
 .benefits{
@@ -137,7 +145,7 @@ div.benefits {
 }
 
 .benefits img{
-    width:65%;
+    width:80%;
 }
 
 
